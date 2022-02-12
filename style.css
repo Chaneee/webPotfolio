@@ -48,6 +48,18 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+
+li{
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1{
     font-size: var(--font-large);
@@ -88,7 +100,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: rgb(255, 236, 211);
   align-items: center;
   color: var(--color-dark-white);
   padding: 16px;
@@ -112,10 +124,29 @@ p {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color:darkorchid;
+  color:darkgray;
 }
 
 .navbar__menu__item:hover {
   background-color: rgb(231, 222, 210);
   border-radius: var(--size-active-radius);
+}
+
+/* Home */
+#home {
+  background: url("imgs/backGround_morning.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 240px;
+  height: 300px;
+  border-radius: 30%;
+  border:2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: lightgray;
 }
