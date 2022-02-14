@@ -25,6 +25,9 @@
   /* Size */
   --size-border-radius: 10px;
   --size-active-radius: 24px;
+
+  /* Animation duration */
+  --animation-duration: 1000ms;
 }
 
 /* Universal tags */
@@ -149,4 +152,49 @@ p {
 .home__title,
 .home__description {
   color: lightgray;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  background-color: lightgoldenrodyellow;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-dark-white);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i{
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {
+  color: limegreen;
+  transform: rotate(25deg) scale(1.7);
+}
+
+
+.major__title, .major__description {
+  color: darkblue;
+}
+
+.major__description {
+  font-size: small;
 }
