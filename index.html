@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -22,14 +23,20 @@
       <i class="fas fa-meh-rolling-eyes"></i>
       <a href="#">Chanee</a>
     </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item active">Home</li>
-      <li class="navbar__menu__item active">About</li>
-      <li class="navbar__menu__item active">Skills</li>
-      <li class="navbar__menu__item active">My Work</li>
-      <li class="navbar__menu__item active">Testimonial</li>
-      <li class="navbar__menu__item active">ETC</li>
-    </ul>
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">Projects</li>
+        <li class="navbar__menu__item">ETC</li>
+      </ul>
+    </div>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
   </nav>
   <!-- Home -->
   <section id="home">
@@ -195,41 +202,117 @@
   </section>
 
   <!-- Work -->
-  <sections id="work" class="section">
-    <h1>Work</h1>
-    <h3>projects</h3>
+  <section id="work" class="section">
+    <h1>projects</h1>
+    <h3>My work</h3>
     <div class="work__caregories">
-      <button class="category__btn">All<span class="category__count">3</span></button>
+      <button class="category__btn">All<span class="category__count">7</span></button>
       <button class="category__btn">Back-end<span class="category__count">2</span></button>
-      <button class="category__btn">Front-end<span class="category__count">0</span></button>
-      <button class="category__btn">Etc<span class="category__count">1</span></button>
+      <button class="category__btn">Front-end<span class="category__count">3</span></button>
+      <button class="category__btn">Etc<span class="category__count">2</span></button>
     </div>
 
     <div class="work__projects">
-      <a 
-      href="" 
-      class="project"
-      target="blank"
-      >
-      <img src="" alt="" class="project__img">
+      <a class="project" target="blank" data-type="back-end">
+      <!-- <img src="" alt="" class="project__img"> -->
       <div class="project__description">
-        <h3 class="Site"></h3>
+        <h3 >물류 재고관리 시스템 운영 및 개발</h3>
+        <i> - JAVA(Spring Framework)<br/></i>
+        <i> - SQL(Oracle)</i>
       </div>
       </a>
+      <a class="project" target="blank" data-type="back-end">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >PDA 재고관리 시스템 개발</h3>
+          <i> - JAVA(Spring Framework)<br/></i>
+          <i> - SQL(Oracle)<br/></i>
+          <i> - Rest API</i>
+        </div>
+      </a>
+      <a class="project" target="blank" data-type="front-end">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >사내 ERP 시스템 화면 개발</h3>
+          <i> - Javascript<br/></i>
+          <i> - WebSqare<br/></i>
+        </div>
+      </a>
+      <a class="project" target="blank" data-type="front-end">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >출고량 관리 시각화</h3>
+          <i> - Javascript(Highcharts)<br/></i>
+          <i> - CSS<br/></i>
+        </div>
+      </a>
+      <a href="" class="project" target="blank" data-type="front-end">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >개인 페이지 제작</h3>
+          <i> - Javascript<br/></i>
+          <i> - HTML<br/></i>
+          <i> - CSS<br/></i>
+        </div>
+      </a>
+      <a class="project" target="blank" data-type="etc">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >AR 기반 게임 개발</h3>
+          <i> - Unity 3D(C#)<br/></i>
+          <i> - Vuforia Open API<br/></i>
+        </div>
+      </a>
+      <a href = "https://github.com/Chaneee/testCut" class="project" target="blank" data-type="etc">
+        <!-- <img src="" alt="" class="project__img"> -->
+        <div class="project__description">
+          <h3 >객체 분할 및 합성 프로그램 개발</h3>
+          <i> - C++<br/></i>
+          <i> - MFC<br/></i>
+        </div>
+      </a>
     </div>
-  </sections>
+  </section>
 
-  <!-- ETC -->
-  <sections id="ETC" class="section">
-    <h1>ETC</h1>
-    <h3>My Interest Thing</h3>
+  <!-- Anything -->
+  <section id="anything" class="section">
+    <h1>More</h1>
+    <h3>Thinking about</h3>
+    <div class="anyting__dot" style="margin-bottom: -25px;">
+      .
+      <span class="etc__afterHover">Hiphop Music</span>
+    </div>
+    <div class="anyting__dot" style="margin-bottom: -5px;">
+      .
+      <span class="etc__afterHover">어떻게 살아야 잘 살았다고 소문이 날까</span>
+    </div>
+    <div class="anyting__dot">
+      .
+      <span class="etc__afterHover">love</span>
+    </div>
+    <div class="anyting__dot">
+      .
+      <span class="etc__afterHover">지속가능한 일</span>
+    </div>
+    <div class="anyting__dot">
+      .
+      <span class="etc__afterHover">맛있는</span>
+    </div>
+    <div class="anyting__dot">
+      .
+      <span class="etc__afterHover">friends</span>
+    </div>
+    <div class="anyting__dot">
+      .
+      <span class="etc__afterHover">돈</span>
+    </div>
 
-  </sections>
+  </section>
 
   <!--FOOT -->
-  <sections id="foot">
+  <section id="foot">
     <h1></h1>
 
-  </sections>
+  </section>
 </body>
 </html>
