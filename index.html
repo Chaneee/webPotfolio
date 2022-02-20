@@ -23,20 +23,17 @@
       <i class="fas fa-meh-rolling-eyes"></i>
       <a href="#">Chanee</a>
     </div>
-    <div class="navbar__menu">
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">Projects</li>
-        <li class="navbar__menu__item">ETC</li>
-      </ul>
-    </div>
-
     <!-- Toggle button -->
     <button class="navbar__toggle-btn">
       <i class="fa-solid fa-bars-staggered"></i>
     </button>
+    <ul class="navbar__menu">
+        <li class="navbar__menu__item selected" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skill">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">Projects</li>
+        <li class="navbar__menu__item" data-link="#anything">More</li>
+    </ul>
   </nav>
   <!-- Home -->
   <section id="home">
@@ -45,7 +42,7 @@
       alt="Chanee profile photo" 
       class="home__avatar"
       />
-      <h1 class="home__title">I'm Chanhee</h1>
+      <h1 class="home__title">Chanhee</h1>
       <h2 class="home__description">0.25스택 개발자</h2>
   </section>
   <!-- About -->
@@ -108,7 +105,7 @@
     <div class="section_container">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
-      <p>대충 설명하는 부분</p>
+      <!-- <p>대충 설명하는 부분</p> -->
       <div class="skillset">
         <div class="skillset__left">
           <h3 class="skillset__title">Skills</h3>
@@ -206,10 +203,21 @@
     <h1>projects</h1>
     <h3>My work</h3>
     <div class="work__caregories">
-      <button class="category__btn">All<span class="category__count">7</span></button>
-      <button class="category__btn">Back-end<span class="category__count">2</span></button>
-      <button class="category__btn">Front-end<span class="category__count">3</span></button>
-      <button class="category__btn">Etc<span class="category__count">2</span></button>
+      <button class="category__btn selected" data-filter="*">
+        All
+        <span class="category__count">7</span>
+      </button>
+      <button class="category__btn" data-filter="back-end">
+        Back-end
+        <span class="category__count">2</span></button>
+      <button class="category__btn" data-filter="front-end">
+        Front-end
+        <span class="category__count">3</span>
+      </button>
+      <button class="category__btn" data-filter="etc">
+        Etc
+        <span class="category__count">2</span>
+      </button>
     </div>
 
     <div class="work__projects">
@@ -314,5 +322,10 @@
     <h1></h1>
 
   </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
 </body>
 </html>
